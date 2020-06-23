@@ -28,41 +28,43 @@
     <main class="container">
         <section class="row justify-content-center">
             <div class="col-sm-12 col-md-4 bg-secondary rounded m-5 p-4 row justify-content-center">
-                
-                <!-- ENTRADA -->
-                <input type="number" class="form-control">
+
+                <div class="col-sm-12">
+                    <!-- ENTRADA -->
+                    <div class="p-2 bg-light text-right rounded" id="entrada">0</div>
+                </div>
 
                 <!-- BOTONES -->
                 <!-- PRIMERA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1"><span class="h5">1</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">4</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">7</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">%</span></button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="uno()">1</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="cuatro()">4</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="siete()">7</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="clearAll()">C</button>
                 </div>
 
                 <!-- SEGUNDA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1"><span class="h5">2</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">5</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">8</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">0</span></button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="dos()">2</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="cinco()">5</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="ocho()">8</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="cero()">0</button>
                 </div>
-                
+
                 <!-- TERCERA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1"><span class="h5">3</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">6</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">9</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">=</span></button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="tres()">3</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="seis()">6</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="nueve()">9</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="igual()">=</button>
                 </div>
-                
+
                 <!-- CUARTA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1"><span class="h5">+</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">-</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">x</span></button>
-                    <button class="btn btn-dark text-light my-1"><span class="h5">/</span></button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="suma()">+</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="resta()">-</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="multiplicacion()">x</button>
+                    <button class="btn btn-dark text-light my-1 h5" onclick="division()">/</button>
                 </div>
             </div>
         </section>
