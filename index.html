@@ -9,6 +9,7 @@
     <meta name="description" content="Calculadora con JavaScript y DOM">
     <meta name="keywords" content="calculadora, js, javascript, dom">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/calculadoraColor.png">
 </head>
 
@@ -17,7 +18,7 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="img/calculadoraColor.png" width="30" class="d-inline-block align-top" alt="Calculadora"
+                    <img src="img/calculadoraColor.png" class="d-inline-block align-top" alt="Calculadora"
                         loading="lazy">
                     Calculadora con JS y DOM
                 </a>
@@ -27,44 +28,44 @@
 
     <main class="container">
         <section class="row justify-content-center">
-            <div class="col-sm-12 col-md-4 bg-secondary rounded m-5 p-4 row justify-content-center">
+            <div class="col-sm-12 col-md-6 bg-warning rounded m-5 p-4 row justify-content-center" id="formato">
 
-                <div class="col-sm-12">
+                <div class="col-sm-12 w-100">
                     <!-- ENTRADA -->
-                    <div class="p-2 bg-light text-right rounded" id="entrada">0</div>
+                    <div class="bg-light text-right rounded"><span class="px-3 d-flex align-items-center justify-content-end h4" id="entrada">0</span></div>
                 </div>
 
                 <!-- BOTONES -->
                 <!-- PRIMERA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1 h5" onclick="uno()">1</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="cuatro()">4</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="siete()">7</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="clearAll()">C</button>
+                    <button class="btn btn-dark text-primary my-1" onclick="uno()"><span class="h4">1</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="cuatro()"><span class="h4">4</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="siete()"><span class="h4">7</span></button>
+                    <button class="btn btn-danger text-light my-1" onclick="clearAll()"><span class="h4">C</span></button>
                 </div>
 
                 <!-- SEGUNDA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1 h5" onclick="dos()">2</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="cinco()">5</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="ocho()">8</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="cero()">0</button>
+                    <button class="btn btn-dark text-primary my-1" onclick="dos()"><span class="h4">2</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="cinco()"><span class="h4">5</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="ocho()"><span class="h4">8</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="cero()"><span class="h4">0</span></button>
                 </div>
 
                 <!-- TERCERA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1 h5" onclick="tres()">3</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="seis()">6</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="nueve()">9</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="igual()">=</button>
+                    <button class="btn btn-dark text-primary my-1" onclick="tres()"><span class="h4">3</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="seis()"><span class="h4">6</span></button>
+                    <button class="btn btn-dark text-primary my-1" onclick="nueve()"><span class="h4">9</span></button>
+                    <button class="btn btn-danger text-light my-1" onclick="igual()"><span class="h4">=</span></button>
                 </div>
 
                 <!-- CUARTA COLUMNA -->
                 <div class="mx-1 mt-4 d-flex flex-column">
-                    <button class="btn btn-dark text-light my-1 h5" onclick="suma()">+</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="resta()">-</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="multiplicacion()">x</button>
-                    <button class="btn btn-dark text-light my-1 h5" onclick="division()">/</button>
+                    <button class="btn btn-danger text-light my-1" onclick="suma()"><span class="h4">+</span></button>
+                    <button class="btn btn-danger text-light my-1" onclick="resta()"><span class="h4">-</span></button>
+                    <button class="btn btn-danger text-light my-1" onclick="multiplicacion()"><span class="h4">x</span></button>
+                    <button class="btn btn-danger text-light my-1" onclick="division()"><span class="h4">/</span></button>
                 </div>
             </div>
         </section>

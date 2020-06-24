@@ -1,0 +1,115 @@
+/* NAVBAR */
+img{
+    width: 30px;
+}
+
+/* DIMENSIONES DE CALCULADORA */
+#formato{
+    width: 70%;
+    height: 75%;
+    background-image: radial-gradient( circle 939px at 94.7% 50%,  rgba(0,178,169,1) 0%, rgba(0,106,101,1) 76.9% );
+}
+
+/* BOTONES */
+button{
+    width: 40px;
+    height: 40px;
+}
+
+/* LARGO DE SECTION */
+section {
+    height: 482px;
+    align-items: center;
+}
+
+/* DISPLAY */
+#entrada{
+    height: 50px;
+    width: 180px;
+}
+
+/* MEDIA QUERIES */
+
+/* DISPOSITIVOS GRANDES */
+@media all and (min-width: 992px) {
+    
+    #formato {
+        max-width: 300px;
+        height: 400px;
+    }
+    
+    button {
+        width: 50px;
+        height: 50px;
+    }
+
+    section {
+        height: 499px;
+        align-items: center;
+    }
+
+    #entrada {
+        height: 60px;
+        width: 228px;
+    }
+
+}
+
+/* DISPOSITIVOS MEDIANOS */
+@media all and (min-width: 768px) and (max-width: 992px){
+   
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-brand, .lead {
+        font-size: 20px;
+    }
+    
+    #formato {
+        max-width: 450px;
+        height: 450px;
+    }
+    
+    button {
+        width: 85px;
+        height: 70px;
+    }
+
+    section {
+        height: 846px;
+        align-items: center;
+    }
+
+    #entrada {
+        height: 60px;
+        width: 375px;
+    }
+
+    footer {
+        padding: 5px 0;
+        font-size: 20px;
+    }
+
+}
+    
+/* DISPOSITIVOS MOVILES PEQUEÑOS */
+@media all and (max-width: 599px){
+
+    #formato {
+        max-width: 450px;
+        height: 320px;
+    }
+    
+    section {
+        height: 482px;
+        align-items: center;
+    }
+
+    #entrada {
+        font-size: 18px;
+    }
+
+}
+
+
